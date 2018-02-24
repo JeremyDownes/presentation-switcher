@@ -3,6 +3,9 @@ $(document).ready(function() {
 	$('.button').click(function() {
 		count++
 		switch(count) {
+			case 0:
+				$('body').css({backgroundImage: 'url(resources/images/threadflat.gif)'})
+				break
 			case 1:
 				$('body').css({backgroundImage: 'url(resources/images/threadDiverging.gif)'})
 				setTimeout(function() {
@@ -32,7 +35,7 @@ $(document).ready(function() {
 				setTimeout(function() {
 					$('body').css({backgroundImage: 'url(resources/images/diversion_loop.gif)'})
 				},2000)
-				count=0
+				count=-1
 				break	
  		} 
 	})	
