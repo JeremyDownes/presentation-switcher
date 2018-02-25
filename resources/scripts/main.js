@@ -1,3 +1,8 @@
+function toRadians (angle) {
+  return angle * (Math.PI / 180);
+}
+
+
 $(document).ready(function() {
 	let count = 0
 	$('.button').click(function() {
@@ -25,18 +30,25 @@ $(document).ready(function() {
 				$('body').css({backgroundImage: 'url(resources/images/event_loop_no_diversion.gif)'})
 				break
 			case 5:
-				$('body').css({backgroundImage: 'url(resources/images/diversion_loop.gif)'})
+				$('body').css({backgroundImage: 'url(resources/images/diversion.gif)'})
+				setTimeout(function() {
+					$('body').css({backgroundImage: 'url(resources/images/event_loop_no_diversion.gif)'})
+				},4100)				
 				break
 			case 6:
-				$('body').css({backgroundImage: 'url(resources/images/diversion_step1.gif)'})
+				$('body').css({backgroundImage: 'url(resources/images/diversion_loop.gif)'})
 				break
 			case 7:
+				$('body').css({backgroundImage: 'url(resources/images/diversion_step1.gif)'})
+				break			
+			case 8:
 				$('body').css({backgroundImage: 'url(resources/images/diversion_step2.gif)'})
 				setTimeout(function() {
-					$('body').css({backgroundImage: 'url(resources/images/diversion_loop.gif)'})
-				},2000)
+					$('body').css({backgroundImage: 'url(resources/images/event_loop_no_diversion.gif)'})
+				},1800)
 				count=-1
 				break	
  		} 
 	})	
+
 })
