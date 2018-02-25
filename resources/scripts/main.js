@@ -54,8 +54,11 @@ $(document).ready(function() {
 				setTimeout(function() {
 					$('body').css({backgroundImage: 'url(resources/images/event_loop_no_diversion.gif)'})
 				},1800)
+<<<<<<< HEAD
 				break
 			case 9:	
+=======
+>>>>>>> ffe58e795107083239adaaf6b62cbc6d1943ac35
 				count=-1
 		 			timer = setInterval(function() {
 	 					deg += 5
