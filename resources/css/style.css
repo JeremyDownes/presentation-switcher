@@ -39,3 +39,15 @@ button:hover {
 button:focus {
 	outline: none;
 }
+
+.rainbow {
+	display: none;
+	position: absolute;
+	height: 700px;
+}
+
+.unicorn {
+	display: none;
+	left: 1%;
+	position: absolute;
+}
